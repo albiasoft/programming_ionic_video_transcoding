@@ -1,5 +1,7 @@
 {
   "name": "ionic-video-transcoding",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

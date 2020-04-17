@@ -1,6 +1,9 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
+src/environments/cloud.credentials.prod.ts
+src/environments/cloud.credentials.ts
+
 *~
 *.sw[mnpcod]
 .tmp
