@@ -20,8 +20,8 @@
     ],
     "paths": {
       "environments/*": ["src/environments/*"],
-      "classes/*": ["src/app/classes/*"],
-      "pages/*": ["src/app/pages/*"]
+      "classes/*": ["src/classes/*"],
+      "pages/*": ["src/app/*"]
     }
   },
   "angularCompilerOptions": {

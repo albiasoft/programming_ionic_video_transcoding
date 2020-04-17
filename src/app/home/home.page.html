@@ -7,9 +7,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <video *ngIf="isVideoUploaded && !isProcessingVideo" controls preload="none" [poster]="urlThumbnail" vertical="top" horizontal="center" slot="fixed" style="width:100%">
+    <source [src]="urlVideo" type="video/mp4">
+  </video>
+
   <div id="container">
-    <ion-fab *ngIf="!this.isProcessingVideo" vertical="center" horizontal="center" slot="fixed">
-      <ion-fab-button (click)="loadVideo()">
+    <ion-fab *ngIf="!isProcessingVideo" vertical="center" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="uploadVideo()">
         <ion-icon name="add"></ion-icon>
       </ion-fab-button>
     </ion-fab>
